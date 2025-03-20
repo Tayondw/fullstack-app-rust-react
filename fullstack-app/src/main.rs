@@ -7,7 +7,7 @@ use tower_http::cors::{ AllowOrigin, Any, CorsLayer };
 // use tokio::net::TcpListener; // NOT USED - however helps with async networking
 
 // NEW
-mod types; // importing types file
+mod types; // importing types file - mod declares a module within the current scope, it tells Rust that a file or module exists and should be compiled
 use types::Person; // using the Person struct from the types file
 
 #[tokio::main] // marks as an async main function using Tokio runtime, which is needed to run async tasks
